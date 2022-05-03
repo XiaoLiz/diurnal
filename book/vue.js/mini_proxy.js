@@ -34,9 +34,7 @@ const obj = new Proxy(target, {
         target[key] = newVal;
 
         // 取出副作用函数并执行
-        bucket.forEach( fn => {
-            fn();
-        });
+        bucket.forEach( fn => fn());
 
         // 设置成功
         return true;

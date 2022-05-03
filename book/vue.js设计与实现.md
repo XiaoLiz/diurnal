@@ -1,48 +1,55 @@
-# 每日日刊
+
+# vue.js 设计与实现
+
+## 第二篇 响应系统的作用与实现
+
+### 2022-05-02~2022-05-03
+
+#### 第4章：响应系统的作用与实现
+
+- 4.2 设计一个完善的响应系统
+
+微响应式函数存在的问题：
+  - 副作用函数硬编码，缺少灵活性
+  - 当新设置的字段不存在时，匿名副作用函数也会执行
+  - Set数据结构作为存储副作用函数的"桶"，是影响副作用函数与目标字段之间没有建立联系的根本原因。
+
+解决方案：
+  - 使副作用函数与被操作字段之间建立联系, weakMap代替Set方法;
+    > WeakMap 对象是一组键/值对的集合，其中的键是弱引用的。其键必须是对象，而值可以是任意的。
+
+  - WeakMap 由 target --> **Map** 构成， Map的键是原始对象 target 的 key;
+  - Map 由 key --> **Set** 构成, Map值由副作用函数组成的**Set**集合
+
+[reactive]('./../assets/reactive.jpg')
 
 
-## 2022-05-02
-
-### vue.js 设计与实现
-第4章：响应系统的作用与实现
-
-- 4.1 响应式与副作用函数
-  - 副作用函数改造: 因为没有在副作用函数与目标字段建立联系
-  - weakMap代替Set方法，get函数使用到 weakMap、Map、Set方法
-
-### 爱的艺术- 艾里希•弗洛姆
-
-第一章：爱是一种艺术吗？
-> "爱是一门艺术，就像生活是一门艺术一样。"
-
-对于爱的理解
-- 1.不愿把爱当爱的能力问题；
-- 2.把爱设想为一个**对象**的问题，而不是**才能**的问题。人们认为爱是简单的，困难是寻找正确的爱的对象，或者被爱。
-  > 这个让我想起罗翔老师的视频片段，很多人喜欢一个人凭感觉，久了没感觉了不爱了
-  > 爱一个人要爱他的具体，爱TA身上某个具化的东西，不会因为时间的磨合、容颜的憔悴而消逝原有的爱！
 
 
-## 2022-04-30
+##### 知识拓展
+[WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+[Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)
+[Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-### vue.js 设计与实现
+
+
+### 2022-04-30/
+
 第4章：响应系统的作用与实现
 
 - 4.1 响应式与副作用函数
   - 副作用函数: 函数执行会影响外部的未知或者全局变量的变化
   - 响应式数据的基本实现: 简版响应式函数
+  - Set 方法实现
+    > Set 对象允许你存储任何类型的唯一值，无论是原始值或者是对象引用。
 
+[Set-MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
 
-#### 算法:
-
-- [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/description/)
-- [20. 有效括号](https://leetcode-cn.com/problems/valid-parentheses/description/)
 
 
 ## 第一篇 框架设计概览
 
 ### 2022-04-29
-
-#### vue.js 设计与实现
 
 第3章：Vue.js 3的设计思路
 
@@ -71,7 +78,6 @@
 
 ### 2022-04-28
 
-#### vue.js 设计与实现
 第2章：框架设计核心要素
 
 - 提升用户开发体验： 清晰明确直观的错误提示
@@ -105,7 +111,6 @@
 
 ### 2022-04-27
 
-#### vue.js 设计与实现
 第1章：权衡的艺术
 
 - 命令式和声明式
@@ -124,17 +129,3 @@
    运行+编译时：vuejs:  (html compiler virtual DOM)
 
  总结：**声明式性能消耗**= **找出最小化性能消耗**(虚拟DOM、diff算法)+**直接修改性能消耗**
-
-
-### 算法
-
-树：
-
-- 树的相关术语
-- 树的基本结构组成
-- 二叉搜索树
-
-playground:
-
-- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
-- [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
