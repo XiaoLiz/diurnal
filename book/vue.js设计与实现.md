@@ -6,10 +6,6 @@
 
 ### 第4章：响应系统的作用与实现
 
-### 2022-05-05
-
-
-
 
 ### 2022-05-03
 
@@ -28,19 +24,16 @@
   - WeakMap 由 target --> **Map** 构成， Map的键是原始对象 target 的 key;
   - Map 由 key --> **Set** 构成, Map值由副作用函数组成的**Set**集合
 
-[reactive]('./../assets/reactive.jpg')
+![Reactive](./assets/reactive.jpg)
+
+### 知识拓展
+
+[WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) <br/>
+[Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)  <br/>
+[Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)  <br/>
 
 
-##### 知识拓展
-[WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
-[Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)
-[Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)
-
-
-
-### 2022-04-30/
-
-第4章：响应系统的作用与实现
+### 2022-04-30
 
 - 4.1 响应式与副作用函数
   - 副作用函数: 函数执行会影响外部的未知或者全局变量的变化
