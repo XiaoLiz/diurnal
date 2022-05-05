@@ -19,8 +19,11 @@ function effect(fn) {
 // 存储副作用函数的桶
 const bucket = new WeakMap();
 
-// 目标对象
-const target = { text: 'hello world' }
+/**
+ * 目标对象
+ * ok 分支处理
+*/
+const target = { ok: true, text: 'hello world' }
 
 // 原始数据代理
 const obj = new Proxy(target, {
@@ -79,17 +82,11 @@ function trigger(target, key) {
 
 // 执行副作用函数，触发读取操作
 effect(()=> {
-    document.body.innerText = obj.text
+    document.body.innerText = obj.ok ? obj.text: 'not'
+
 });
 
 //修改响应式数据
 setTimeout(() => {
    obj.text = 'hello vue3'
 }, 1000)
-
-
-
-
-
-
-
