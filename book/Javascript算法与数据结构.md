@@ -21,7 +21,7 @@
 ### 树
    * [二叉搜索树](./algorithm/tree/BinarySearchTree.js)
 
-#### 2022-05-06
-## 冒泡排序
-- JavaScript sort 排序
-- sort内部机制 for循环遍历
+
+### 排序
+   * [冒泡排序](./algorithm/Sort/bubbleSort.js)
+   * [快速排序](./algorithm/Sort/quickSort.js)

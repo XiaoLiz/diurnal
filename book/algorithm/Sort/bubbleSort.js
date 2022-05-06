@@ -14,7 +14,7 @@ function bubbleSort(arr) {
                 let temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
-                // [arr[i], arr[i]] = [arr[i+1], arr[i]]
+                // [arr[j], arr[j+i]] = [arr[i+1], arr[j]]
             }
         }
     };
