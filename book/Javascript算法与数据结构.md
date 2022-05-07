@@ -25,3 +25,13 @@
 ### 排序
    * [冒泡排序](./algorithm/Sort/bubbleSort.js)
    * [快速排序](./algorithm/Sort/quickSort.js)
+   * [二分-leftpad](./algorithm/Sourcecode/leftpad.js)
+
+## 运算符
+
+- "&"  与
+- "|"  或
+- "~"  非
+- "^"  异或
+- "<<" 左移
+- ">>" 右移
