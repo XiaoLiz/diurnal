@@ -1,8 +1,5 @@
 # Book
 
-
-
-
 ## 在读
 
 2022-05
@@ -11,8 +8,11 @@
 
 
 ## 计划待读
-- [《How to Read a Book》 ](https://book.douban.com/subject/1013208/) (5月份)
+- [《How to Read a Book》 ](https://book.douban.com/subject/1013208/)
+- [高效前端：Web高效编程与优化实践](https://book.douban.com/subject/30170670/)
 - [《暗时间》](https://book.douban.com/subject/6709809/)
+- [《⼈⽉神话》](https://book.douban.com/subject/2230248/)
+- [《软技能2》](https://book.douban.com/subject/35043940/)
 
 
 ## 已读
