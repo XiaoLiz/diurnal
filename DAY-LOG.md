@@ -1,7 +1,20 @@
 ## DAY-LOG
 
-### 2022-05-10
+### 2022-05-11
+#### 阅读
+《黑客与画家》
 
+#### 知识点
+1.贪心算法
+2.动态规划
+
+#### algorithm playground
+- [79. 单词搜索-回溯](https://leetcode.cn/problems/word-search/)
+- [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/description/)
+- [860. 柠檬水找零](https://leetcode.cn/problems/lemonade-change/description/)
+
+
+### 2022-05-10
 #### 知识点
 - 回溯法
 本质是回溯思想，实现回溯发的重点通常是实现递归。
@@ -24,7 +37,7 @@
 - 双指针：指有两个游标指针指向不同的位置。双指针部署具体算法思想，而是一种解题技巧。
 
 
-####  algorithm playground
+#### algorithm playground
 - [46. 全排列](https://leetcode.cn/problems/permutations/description/)
 - [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/description/)
 - [剑指 Offer 06. 从尾到头打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
