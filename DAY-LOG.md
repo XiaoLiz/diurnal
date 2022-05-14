@@ -1,4 +1,38 @@
 ## DAY-LOG
+### 2022-05-13
+####  algorithm playground
+- 数据结构
+ - 数组
+  - [26] 删除有序数组中的重复项
+  - [27] 移除元素
+  - [167] 两数之和 II - 输入有序数组
+  - [283] 移动零
+  - [209] **长度最小的子数组** 
+  - [344] 反转字符串
+  - [977] 有序数组的平方
+
+ - 链表
+  - [19] 删除链表的倒数第 N 个结点
+  - [21] 合并两个有序链表
+  - [206] 翻转链表
+  - [234] 回文链表
+  - [876] 链表的中间结点
+
+
+### 2022-05-13
+#### 阅读
+1.《神奇手账》如何正确使用手账 - 笔记
+2. 梳理年度储蓄计划，进度40%
+
+#### 考察知识点
+1.**动态规划**
+2.贪心算法思维
+3.二分查找
+
+- [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/description/)
+- [322. 零钱兑换](https://leetcode.cn/problems/coin-change/description/)
+- [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
+
 
 ### 2022-05-11
 #### 阅读
@@ -7,8 +41,7 @@
 #### 知识点
 1.贪心算法
 2.动态规划
-
-#### algorithm playground
+#### playground
 - [79. 单词搜索-回溯](https://leetcode.cn/problems/word-search/)
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/description/)
 - [860. 柠檬水找零](https://leetcode.cn/problems/lemonade-change/description/)
